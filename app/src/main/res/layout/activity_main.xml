@@ -1,55 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/lbl_titulo"
-        android:layout_width="310dp"
-        android:layout_height="64dp"
-        android:fontFamily="@font/gidugu"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:fontFamily="sans-serif-black"
         android:text="Aplicaciones Móvil"
-        android:textColor="#263766"
-        android:textColorHighlight="@color/white"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073" />
+        android:textColor="#0D47A1"
+        android:textSize="35sp"
+        android:gravity="center"
+
+
+        />
 
     <TextView
         android:id="@+id/lbl_nombre"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="165dp"
-        android:layout_marginEnd="203dp"
-        android:layout_marginRight="203dp"
-        android:layout_marginBottom="434dp"
-        android:fontFamily="@font/gidugu"
+        android:fontFamily="sans-serif-black"
         android:text="Kevin Stalin Lema Conejo"
-        android:textColor="#263766"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbl_titulo"
-        app:layout_constraintVertical_bias="0.028" />
+        android:textColor="#0D47A1"
+        android:textSize="25sp"
+        android:gravity="center"
+
+        />
 
     <Button
         android:id="@+id/btn_inicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#0D47A1"
         android:onClick="irSuma"
-        android:text="Suma"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="488dp" />
+        android:text="Calcular"
+        android:gravity="center"
+        android:layout_gravity="center"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+
+</LinearLayout>

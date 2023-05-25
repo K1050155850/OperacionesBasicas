@@ -31,5 +31,48 @@ public class sumaActivity extends AppCompatActivity {
 
         total.setText(resultado+""); //Dentro del set tex lo colocamos como cadena poniendo resultado + ""
     }
+//Resta
+    public void Restar(View view){
+        //Accedemos al ID que colocamos en los botones y text fields
+        EditText numero1 = findViewById(R.id.txt_num1);
+        EditText numero2 = findViewById(R.id.txt_num2);
+        TextView total = findViewById(R.id.txt_resultado);
+
+        //Operamos con las variales
+        double resultado = Double.parseDouble( numero1.getText().toString() )- Double.parseDouble( numero2.getText().toString());
+
+        //Imprimimos los resultados
+
+        total.setText(resultado+""); //Dentro del set tex lo colocamos como cadena poniendo resultado + ""
+    }
+    //Multiplicacion
+    public void Multiplicar(View view){
+        //Accedemos al ID que colocamos en los botones y text fields
+        EditText numero1 = findViewById(R.id.txt_num1);
+        EditText numero2 = findViewById(R.id.txt_num2);
+        TextView total = findViewById(R.id.txt_resultado);
+
+        //Operamos con las variales
+        double resultado = Double.parseDouble( numero1.getText().toString() )* Double.parseDouble( numero2.getText().toString());
+
+        //Imprimimos los resultados
+
+        total.setText(resultado+""); //Dentro del set tex lo colocamos como cadena poniendo resultado + ""
+    }
+    //Division
+    public void Dividir(View view){
+        //Accedemos al ID que colocamos en los botones y text fields
+        EditText numero1 = findViewById(R.id.txt_num1);
+        EditText numero2 = findViewById(R.id.txt_num2);
+        TextView total = findViewById(R.id.txt_resultado);
+
+        //Operamos con las variales
+        double resultado = Double.parseDouble( numero1.getText().toString() )+ Double.parseDouble( numero2.getText().toString());
+
+        //Imprimimos los resultados
+
+        total.setText(resultado+""); //Dentro del set tex lo colocamos como cadena poniendo resultado + ""
+    }
+
 
 }
