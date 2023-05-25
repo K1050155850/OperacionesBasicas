@@ -4,86 +4,132 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
     tools:context=".sumaActivity">
 
+    <!-- Titulo -->
     <TextView
-        android:id="@+id/lbl_titulo1"
-        android:layout_width="257dp"
-        android:layout_height="71dp"
-        android:fontFamily="@font/gidugu"
-        android:text="Apliaciones Móvil"
-        android:textColor="#263766"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="7dp" />
-
+        android:id="@+id/lbl_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplicaciones Móviles"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0D47A1"
+    />
+    <!-- SubTitulo -->
+    <TextView
+        android:id="@+id/lbl_subtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:text="Kevin Stalin Lema Conejo"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0D47A1"
+        />
+    <!-- Labels de numero -->
     <TextView
         android:id="@+id/lbl_num1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Número 1"
-        android:textColor="#263766"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="147dp" />
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="left"
+        android:text="Número 1:"
+        android:textColor="#0D47A1"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="170dp"
+        />
 
+    <!-- EditText para ingreso de datos -->
     <TextView
         android:id="@+id/lbl_num2"
-        android:layout_width="wrap_content"
+        android:layout_width="415dp"
+        android:layout_height="72dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="left"
+        android:text="Número 2:"
+        android:textColor="#0D47A1"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <EditText
+        android:id="@+id/txt_num2"
+        android:layout_width="276dp"
+        android:layout_height="66dp"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <EditText
+        android:id="@+id/txt_num1"
+        android:layout_width="276dp"
+        android:layout_height="66dp"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="154dp"
+        />
+
+    <!-- Subtitulo para resultado-->
+    <TextView
+        android:id="@+id/lbl_result"
+        android:layout_width="400dp"
+        android:layout_height="91dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Resultado"
+        android:textColor="#0D47A1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="345dp"
+        />
+
+    <!-- EditText para ver el resultado-->
+    <EditText
+        android:id="@+id/txt_resultado"
+        android:layout_width="276dp"
+        android:layout_height="66dp"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="436dp"
+        />
+
+    <!-- Contenedor de botones-->
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Número 2"
-        android:textColor="#263766"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="265dp" />
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
 
     <Button
         android:id="@+id/btn_suma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#0D47A1"
+        android:drawableBottom="@color/black"
+        android:fontFamily="sans-serif-black"
         android:onClick="Sumar"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:text="Sumar"
+        android:textColor="#FFFF"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="347dp" />
+        android:typeface="sans"
+        android:visibility="visible"
+        app:circularflow_radiusInDP="20pd"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="540dp"
+        />
 
-    <EditText
-        android:id="@+id/txt_num1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="138dp" />
 
-    <EditText
-        android:id="@+id/txt_num2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="255dp" />
-
-    <Button
-        android:id="@+id/btn_regresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="regresaMenu"
-        android:text="regresar"
-        tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="553dp" />
-
-    <EditText
-        android:id="@+id/txt_resultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="442dp" />
+</RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
