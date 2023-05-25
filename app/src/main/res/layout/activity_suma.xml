@@ -113,12 +113,65 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="Sumar"
-                android:text="Sumar"
+                android:text="+"
                 android:background="#0D47A1"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
+
                 />
+            <Button
+                android:id="@+id/btn_restar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Restar"
+                android:text="-"
+                android:background="#0D47A1"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btn_sumar"
+                android:layout_toRightOf="@+id/btn_sumar"
+                android:layout_marginLeft="5sp"
+
+                />
+
+            <Button
+                android:id="@+id/btn_multiplicar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Multiplicar"
+                android:text="x"
+                android:background="#0D47A1"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btn_restar"
+                android:layout_toRightOf="@+id/btn_restar"
+                android:layout_marginLeft="5sp"
+
+                />
+
+            <Button
+                android:id="@+id/btn_dividir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Dividir"
+                android:text="/"
+                android:background="#0D47A1"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btn_multiplicar"
+                android:layout_toRightOf="@+id/btn_multiplicar"
+                android:layout_marginLeft="5sp"
+
+                />
+
+
         </RelativeLayout>
 
 
