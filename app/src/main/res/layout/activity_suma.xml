@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
-    tools:context=".sumaActivity">
+    tools:context=".sumaActivity"
+    >
 
     <!-- Titulo -->
     <TextView
@@ -24,7 +25,7 @@
     <TextView
         android:id="@+id/lbl_subtitulo"
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="60dp"
         android:text="Kevin Stalin Lema Conejo"
         android:gravity="center"
         android:textSize="25dp"
@@ -35,101 +36,95 @@
     <!-- Labels de numero -->
     <TextView
         android:id="@+id/lbl_num1"
-        android:layout_width="match_parent"
-        android:layout_height="370dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
         android:fontFamily="sans-serif-black"
         android:gravity="left"
         android:text="Número 1:"
         android:textColor="#0D47A1"
         android:textSize="25dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="170dp"
+
         />
 
     <!-- EditText para ingreso de datos -->
+
+    <EditText
+        android:id="@+id/txt_num1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ingresa el primer numero"
+         />
+
     <TextView
         android:id="@+id/lbl_num2"
-        android:layout_width="415dp"
-        android:layout_height="72dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
         android:fontFamily="sans-serif-black"
         android:gravity="left"
         android:text="Número 2:"
         android:textColor="#0D47A1"
         android:textSize="25dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="272dp" />
+         />
+
+    <!-- Subtitulo para resultado-->
 
     <EditText
         android:id="@+id/txt_num2"
-        android:layout_width="276dp"
-        android:layout_height="66dp"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="245dp" />
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ingresa el segundo número"
 
-    <EditText
-        android:id="@+id/txt_num1"
-        android:layout_width="276dp"
-        android:layout_height="66dp"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="154dp"
         />
 
-    <!-- Subtitulo para resultado-->
+    <!-- EditText para ver el resultado-->
     <TextView
         android:id="@+id/lbl_result"
-        android:layout_width="400dp"
-        android:layout_height="91dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="Resultado"
         android:textColor="#0D47A1"
         android:textSize="30dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="345dp"
+
         />
 
-    <!-- EditText para ver el resultado-->
     <EditText
         android:id="@+id/txt_resultado"
-        android:layout_width="276dp"
+        android:layout_width="match_parent"
         android:layout_height="66dp"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="436dp"
+        android:hint="resultado"
+
         />
 
     <!-- Contenedor de botones-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-
-    <Button
-        android:id="@+id/btn_suma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#0D47A1"
-        android:drawableBottom="@color/black"
-        android:fontFamily="sans-serif-black"
-        android:onClick="Sumar"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:text="Sumar"
-        android:textColor="#FFFF"
-        android:textSize="20sp"
-        android:typeface="sans"
-        android:visibility="visible"
-        app:circularflow_radiusInDP="20pd"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="540dp"
-        />
+        <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/btn_sumar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Sumar"
+                android:text="Sumar"
+                android:background="#0D47A1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
 
 
-</RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>
